@@ -24,7 +24,7 @@ const Discovery = () => {
             <Comment comments={["Why would he go to the locker?"]}/>
                 <video 
                 ref={videoRef}
-                src="arg/video/HidingTheBody.mov"
+                src="arg/video/HidingTheBody.mp4"
                 poster="arg/images/clickMe.jpg" 
                 preload="metadata"
                 onClick={playOrPause}
