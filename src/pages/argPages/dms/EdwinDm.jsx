@@ -23,7 +23,7 @@ const EdwinDM = () => {
 
         const timer = setTimeout(() => {
             navigate('/gr1m4ld1')
-        }, 5000)
+        }, 10000)
 
         return () => clearTimeout(timer)
     }, [navigate])
@@ -31,12 +31,13 @@ const EdwinDM = () => {
 
     return (
         <div className="w-full min-h-screen bg-center bg-[url('arg/images/ShowThemAll.png')] bg-cover">
-            <div className="flex flex-col justify-center items-center max-w-screen h-screen p-5 overflow-hidden box-border">
-            <Comment comments={["Why would he go to the locker?"]}/>
+            <div className="flex flex-col justify-center items-center max-w-screen h-screen gap-4 p-5 overflow-hidden box-border">
+            <h3 className="text-xl text-red-800 font-extrabold">If only he had more time...</h3>
+            <Comment comments={["Those who know"]}/>
                 <video 
                 ref={videoRef}
-                src="arg/video/HidingTheBody.mov"
-                poster="arg/images/clickMe.jpg" 
+                src="arg/video/Matt_Edwin.mp4"
+                poster="arg/images/Matt_Edwin.png" 
                 preload="metadata"
                 onClick={playOrPause}
                 className="block rounded-lg cursor-pointer max-w-full max-h-full w-auto h-auto object-contain"
